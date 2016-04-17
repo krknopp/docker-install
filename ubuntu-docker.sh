@@ -8,4 +8,5 @@ apt-get update
 
 apt-get install linux-image-extra-$(uname -r)
 
-apt-get install docker-engine
+apt-get install -y docker-engine
+
