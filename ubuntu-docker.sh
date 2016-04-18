@@ -6,7 +6,9 @@ echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > /etc/apt/sour
 
 apt-get update
 
-apt-get install linux-image-extra-$(uname -r)
+echo "apt-get install -y linux-image-extra-$(uname -r)"
+apt-get install -y linux-image-extra-$(uname -r)
 
+echo "apt-get install -y docker-engine"
 apt-get install -y docker-engine
 
