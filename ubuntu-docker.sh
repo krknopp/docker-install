@@ -6,7 +6,7 @@ echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > /etc/apt/sour
 
 apt-get update
 
-apt-get install -y linux-image-extra-$(uname -r) docker-engine
+apt-get install -y linux-image-extra-$(uname -r) docker-engine ntp nfs-common
 
 curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 
